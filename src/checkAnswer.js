@@ -1,5 +1,5 @@
 import isEven from "./isEven.js";
-import random from "../src/random-number.js";
+import random from "./random-number.js";
 import readlineSync from "readline-sync";
 
 export default (number) => {
