@@ -1,4 +1,5 @@
 
-export default (array) => {
-return array[Math.floor(Math.random() * array.length)];
+export default () => {
+const array = ['+', '-', '*'];
+    return array[Math.floor(Math.random() * array.length)];
 }
