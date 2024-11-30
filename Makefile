@@ -11,7 +11,7 @@ brain-calc:
 	node bin/brain-calc.js
 
 lint:
-	npx eslint .	
+	npx eslint .
 
 publish:
 	npm publish --dry-run
