@@ -7,9 +7,9 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const getGameData = () => {
   const question = random(100);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
-  return [question, correctAnswer ];
+  return [question, correctAnswer];
 };
 
-const startEvenGame = () => mainLogic (getGameData, description);
+const startEvenGame = () => mainLogic(getGameData, description);
 
 export default startEvenGame;

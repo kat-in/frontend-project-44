@@ -8,9 +8,9 @@ const getGameData = () => {
   const question = `${getNumber(100)} ${getSign()} ${getNumber(100)}`;
   const result = eval(question);
   const correctAnswer = result.toString();
-  return [question, correctAnswer ];
+  return [question, correctAnswer];
 };
- 
-const startCalcGame = () => mainLogic (getGameData, description);
+
+const startCalcGame = () => mainLogic(getGameData, description);
 
 export default startCalcGame;
