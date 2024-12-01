@@ -8,7 +8,7 @@ const getGameData = () => {
   const progression = getProgression(10);
   const hidenNumber = getNumber(10) - 1;
   const result = progression[hidenNumber];
-  const correctAnswer = result;
+  const correctAnswer = result.toString();
   progression[hidenNumber] = '..';
   const question = progression.join(' ');
 
