@@ -5,7 +5,7 @@ import getNumber from '../getNumber.js';
 const description = 'What number is missing in the progression?';
 
 const getGameData = () => {
-  const progression = getProgression(10);
+  const progression = getProgression(100);
   const hidenNumber = getNumber(10) - 1;
   const result = progression[hidenNumber];
   const correctAnswer = result.toString();
