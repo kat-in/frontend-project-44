@@ -20,7 +20,6 @@ Let's try again, ${name}!`);
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default mainLogic;
