@@ -14,12 +14,13 @@ const mainLogic = (getGameData, description) => {
     if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
-       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
 Let's try again, ${name}!`);
-       return;
-      }
+      return;
+    }
   }
-  return console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
+  return;
 };
 
 export default mainLogic;

@@ -5,8 +5,8 @@ import getGcd from '../getGcd.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getGameData = () => {
-  const number1 = getNumber(100)+1;
-  const number2 = getNumber(100)+1;
+  const number1 = getNumber(100) + 1;
+  const number2 = getNumber(100) + 1;
   const question = `${number1} ${number2}`;
   const result = getGcd(number1, number2);
   const correctAnswer = result.toString();
