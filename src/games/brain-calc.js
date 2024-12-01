@@ -1,7 +1,8 @@
 import { evaluate } from 'mathjs';
 import mainLogic from '../index.js';
-import getSign from '../getSign.js';
 import getNumber from '../getNumber.js';
+import getSign from '../getSign.js';
+
 
 const description = 'What is the result of the expression?';
 
