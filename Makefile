@@ -10,6 +10,8 @@ brain-progression:
 	node bin/brain-progression.js
 brain-calc:
 	node bin/brain-calc.js
+brain-prime:
+	node bin/brain-prime.js
 lint:
 	npx eslint .
 publish:
