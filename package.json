@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/kat-in/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kat-in/frontend-project-44/actions)",
+  "description": "Утилита консольных игр: Brain-Games",
   "main": "index.js",
   "type": "module",
   "bin": {
