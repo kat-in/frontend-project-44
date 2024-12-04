@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "Утилита консольных игр: Brain-Games",
+  "description": "Brain-Games: 5 консольных игр для прокачки мозга",
   "main": "index.js",
   "type": "module",
   "bin": {
