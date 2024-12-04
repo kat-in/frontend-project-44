@@ -1,8 +1,20 @@
 import mainLogic from '../index.js';
-import getProgression from '../getProgression.js';
 import getNumber from '../getNumber.js';
 
 const description = 'What number is missing in the progression?';
+
+const getProgression = (length) => {
+  const firstNumber = getNumber(100);
+  const difference = getNumber(100) + 1;
+  const progression = [firstNumber];
+
+  let progressionElement = firstNumber;
+  for (let i = 1; i < length; i += 1) {
+    progressionElement += difference;
+    progression.push(progressionElement);
+  }
+  return progression;
+};
 
 const getGameData = () => {
   const progression = getProgression(10);

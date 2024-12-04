@@ -1,9 +1,25 @@
 import mainLogic from '../index.js';
 import getNumber from '../getNumber.js';
-import getSign from '../getSign.js';
-import getCalc from '../getCalc.js';
 
 const description = 'What is the result of the expression?';
+
+const getSign = () => {
+  const array = ['+', '-', '*'];
+  return array[Math.floor(Math.random() * array.length)];
+};
+
+const getCalc = (num1, num2, sign) => {
+  if (sign === '+') {
+    return num1 + num2;
+  }
+  if (sign === '-') {
+    return num1 - num2;
+  }
+  if (sign === '*') {
+    return num1 * num2;
+  }
+  return console.log('Неизвестный оператор');
+};
 
 const getGameData = () => {
   const number1 = getNumber(100);

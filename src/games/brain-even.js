@@ -1,8 +1,9 @@
 import mainLogic from '../index.js';
-import isEven from '../isEven.js';
 import random from '../getNumber.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (number) => number % 2 === 0;
 
 const getGameData = () => {
   const question = random(100);

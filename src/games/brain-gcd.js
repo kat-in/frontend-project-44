@@ -1,8 +1,20 @@
 import mainLogic from '../index.js';
 import getNumber from '../getNumber.js';
-import getGcd from '../getGcd.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
+
+const getGcd = (num1, num2) => {
+  const maxNum = Math.max(num1, num2);
+  const minNum = Math.min(num1, num2);
+  let res = minNum;
+  for (let i = minNum; i > 0; i -= 1) {
+    if (maxNum % res === 0 && minNum % res === 0) {
+      return res;
+    }
+    res -= 1;
+  }
+  return res;
+};
 
 const getGameData = () => {
   const number1 = getNumber(100) + 1;
