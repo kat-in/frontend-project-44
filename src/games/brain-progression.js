@@ -1,5 +1,5 @@
 import mainLogic from '../index.js';
-import getNumber from '../getNumber.js';
+import getNumber from '../utils.js';
 
 const description = 'What number is missing in the progression?';
 

@@ -1,5 +1,5 @@
 import mainLogic from '../index.js';
-import random from '../getNumber.js';
+import random from '../utils.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 

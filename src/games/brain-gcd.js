@@ -1,5 +1,5 @@
 import mainLogic from '../index.js';
-import getNumber from '../getNumber.js';
+import getNumber from '../utils.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
