@@ -5,20 +5,25 @@ const description = 'What is the result of the expression?';
 
 const getSign = () => {
   const array = ['+', '-', '*'];
-  return array[Math.floor(Math.random() * array.length)];
+  return array[getNumber(0, 2)];
 };
 
 const getCalc = (num1, num2, sign) => {
-  if (sign === '+') {
-    return num1 + num2;
+  let result;
+  switch (sign) {
+    case '+':
+      result = num1 + num2;
+      break;
+    case '-':
+      result = num1 - num2;
+      break;
+    case '*':
+      result = num1 * num2;
+      break;
+    default:
+      throw new Error(`Неизвестный оператор: '${sign}'!`);
   }
-  if (sign === '-') {
-    return num1 - num2;
-  }
-  if (sign === '*') {
-    return num1 * num2;
-  }
-  return console.log('Неизвестный оператор');
+  return result;
 };
 
 const getGameData = () => {
