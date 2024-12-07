@@ -17,8 +17,8 @@ const getGcd = (num1, num2) => {
 };
 
 const getGameData = () => {
-  const number1 = getNumber(100) + 1;
-  const number2 = getNumber(100) + 1;
+  const number1 = getNumber(1, 100);
+  const number2 = getNumber(1, 100);
   const question = `${number1} ${number2}`;
   const result = getGcd(number1, number2);
   const correctAnswer = result.toString();

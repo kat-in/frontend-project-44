@@ -20,7 +20,7 @@ const isPrime = (number) => {
 };
 
 const getGameData = () => {
-  const question = getNumber(100);
+  const question = getNumber(1, 100);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };

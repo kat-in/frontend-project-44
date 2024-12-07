@@ -27,8 +27,8 @@ const getCalc = (num1, num2, sign) => {
 };
 
 const getGameData = () => {
-  const number1 = getNumber(100);
-  const number2 = getNumber(100);
+  const number1 = getNumber(0, 50);
+  const number2 = getNumber(0, 50);
   const sign = getSign();
   const question = `${number1} ${sign} ${number2}`;
   const result = getCalc(number1, number2, sign);
