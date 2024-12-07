@@ -5,7 +5,7 @@ const description = 'What number is missing in the progression?';
 
 const getProgression = (length) => {
   const firstNumber = getNumber(0, 100);
-  const difference = getNumber(1, 100);
+  const difference = getNumber(0, 100) + 1;
   const progression = [firstNumber];
 
   let progressionElement = firstNumber;
