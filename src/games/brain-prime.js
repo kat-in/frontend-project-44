@@ -4,17 +4,14 @@ import getNumber from '../utils.js';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number === 1) {
-    return true;
-  }
-  if (number === 0 || number % 2 === 0) {
+  if (number < 2) {
     return false;
   }
-  for (let i = 3; i < number; i += 1) {
+
+  for (let i = 2; i < Math.sqrt(number); i += 1) {
     if (number % i === 0) {
       return false;
     }
-    i += 1;
   }
   return true;
 };
